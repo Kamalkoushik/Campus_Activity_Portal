@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+
+	<navigation-rule>
+	<from-view-id>/Login.xhtml</from-view-id>
+		<navigation-case>
+			<from-action>#{loginbean.getLogin()}</from-action>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/Home.xhtml</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-action>#{loginbean.getLogin()}</from-action>
+			<from-outcome>fail</from-outcome>
+			<to-view-id>/registration.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+</faces-config>

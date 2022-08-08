@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:a4j="http://richfaces.org/a4j">
+
+<head>
+  <title>Home</title>
+</head>
+<body>
+<style>
+body {
+  background-image: url('img/backimage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:black;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin-top: 0%;
+}
+.wrapper nav {
+  display: flex;
+  list-style: none;
+}
+.wrapper nav a {
+  text-decoration: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 25px;
+  color: black;
+  font-family: russo one;
+  position: relative;
+}
+nav  a {
+  font-weight: 600;
+  font-size: 25px;
+  }
+  
+.wrapper nav a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s linear;
+}
+.wrapper nav a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+}
+.banner-area h2 {
+  font-size: 65px;
+  margin: 0;
+  color: #262626;
+}
+.banner-area p {
+  color: #262626;
+  width: 35%;
+  text-align: center;
+  animation: animate 5s 1;
+}
+.banner-area {
+  width: 100%;
+  height: 100vh;
+  
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+h2 {
+  margin-top: -100px;
+  font-size: 50px;
+  color:black;
+}
+.btn {
+  text-decoration: none;
+  padding: 10px 50px;
+  color: #262626;
+  background: #f7bc25;
+  transition: 0.6s ease;
+  animation: animate 8s 1;
+}
+.btn:hover {
+  background-color: #262626;
+  color: #fff;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+a{
+  display:inline;
+  text-align:center;
+  text-decoration:none;
+  color:black;
+}
+figure{
+  display:inline;
+}
+.srxr{
+  display:flex;
+}
+img{
+  width:250px;
+  height:200px;
+}
+
+.banner-area img {
+  color: #262626;
+  text-align: center;
+  margin-right: -8px;
+  margin-left: -8px;
+  margin-bottom: -6px;
+  margin-top: -2px;
+}
+
+</style>
+<head>
+  <div class="wrapper">
+    <nav>
+        <a href="sports.xhtml">Sports</a>
+        <a href="events.xhtml">Events</a>
+   </nav>
+    <div class="banner-area">
+      <h2>Campus Activity Portal</h2>
+      <div class="box">
+        <a href="sports.xhtml" style="margin-right:30px;"><button><img src="img/sports.jpg" /></button></a>
+        <a href="events.xhtml"><button><img src="img/event.jpg" /></button></a>        
+      </div>    
+    </div>
+  </div>
+</head>
+</body>
+</html>

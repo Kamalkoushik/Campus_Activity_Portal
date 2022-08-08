@@ -1,0 +1,60 @@
+<html xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+<title> Register </title>
+</h:head>
+<h:body>
+<style>
+* {
+	margn: 0;
+	padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:black;
+  display: flex;	
+}
+
+.cover {
+	width: 900px;
+	height: 400px;
+	margin-top: 50px;
+	display: flex;
+}
+
+.box {
+	margin: 20px;
+	width: 250px;
+	height: 200px;
+	box-shadow: -1px 0 10px #000000;
+	align-items: center;
+	justify-content: center;
+	text-allign: center;
+}
+
+</style>
+	<div class="box">
+		<h1>Register to Event</h1>
+		<h:form>
+			<p>ID</p>
+			<h:inputText value="#{event.id}"/>
+			<p>EventName</p>
+				<h:selectOneMenu value="#{event.name}">
+					<f:selectItem itemValue="Falshmob" itemLabel="Flashmob">
+					<f:selectItem itemValue="Crack_The_Box" itemLabel="Crack_The_Box">
+					<f:selectItem itemValue="Phishing" itemLabel="Phishing">
+					<f:selectItem itemValue="Foreign_Language_Club" itemLabel="Foreign_Language_Club">
+					<f:selectItem itemValue="Diversity/Cultural" itemLabel="Diversity/Cultural">
+					<f:selectItem itemValue="Recerational" itemLabel="Recerational">
+				</h:selectOneMenu>
+			<h:commandButton action="#{event.registerEvent()}" value="Register" />
+		</h:form>
+	</div>
+</h:body>
+</html>

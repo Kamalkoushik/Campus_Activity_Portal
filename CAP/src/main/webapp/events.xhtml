@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:a4j="http://richfaces.org/a4j">
+
+<head>
+  <title>Home</title>
+</head>
+<body>
+<style>
+* {
+	margn: 0;
+	padding: 0;
+}
+
+body {
+  background-image: url('img/eventbg.jpg');
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:black;
+  display: flex;	
+}
+
+div {
+	margin: 30px;
+}
+
+.cover {
+	width: 900px;
+	height: 400px;
+	margin-top: 50px;
+	display: flex;
+}
+
+.box {
+	margin: 20px;
+	width: 276px;
+	height: 400px;
+	box-shadow: -1px 0 10px #000000;
+	align-items: center;
+	justify-content: center;
+	text-allign: center;
+}
+
+.box1 {
+	margin: 20px;
+	width: 300px;
+	height: 400px;
+	box-shadow: -1px 0 10px #000000;
+	align-items: center;
+	justify-content: center;
+	text-allign: center;
+}
+
+.box2 {
+	margin: 20px;
+	width: 276px;
+	height: 400px;
+	box-shadow: -1px 0 10px #000000;
+	align-items: center;
+	justify-content: center;
+	text-allign: center;
+}
+
+.img {
+	height: 200px;
+	width: 30px;
+	display: flex;
+}
+
+h2, p {
+	color: #FFFFFF;
+}
+
+
+</style>
+<div>
+  <div class="box">
+  	<img src="img/phishing.jpg"/>
+  	<h2>Phishing</h2>
+  	<p>Phishing is an attack that attempts to steal your money, or your identity, 
+  	by getting you to reveal personal information -- such as credit card numbers, 
+  	bank information, or passwords -- on websites that pretend to be legitimate.</p>
+  </div>
+  
+  <div class="box1">
+  	<img src="img/flamob.jpg"/>
+  	<h2>Flash Mob</h2>
+  	<p>A flash mobis a group of people who assemble suddenly in a public place, 
+  	perform for a brief time, then quickly disperse, often for the purposes of entertainment, satire, 
+  	and artistic expression.</p>
+  </div>
+  
+  <div class="box2">
+  	<img src="img/ctb.jpg"/>
+  	<h2>Crack the Box</h2>
+  	<p>Recover the password, decrypt the PDF, and retrieve the flag!
+  	The one who is completing all the set of tasks given first will be the winner.</p>
+  </div>
+</div>
+
+<div>
+  <div class="box">
+  	<img src="img/forlan.jpg" style="width:277px;"/>
+  	<h2>Foreign language club</h2>
+  	<p>The Foreign Language Club is a place for language learners to use the medium beyond the classroom and in 
+  	real life situations. The practice of a language in the classroom is crucial, but it is not enough to master 
+  	the language.</p>
+  </div>
+  
+  <div class="box1">
+  	<img src="img/cultural.jpg" style="width:300px;"/>
+  	<h2>Diversity/Cultural</h2>
+  	<p>Cultural diversity is the quality of diverse or different cultures. Cultural diversity can also 
+  	refer to having different cultures respect each other's differences. It is often used to mention the 
+  	variety of human societies or cultures in a specific region, or in the world as a whole. </p>
+  </div>
+  
+  <div class="box2">
+  	<img src="img/recreational.jpg" style="width:276px;"/>
+  	<h2>Recreational</h2>
+  	<p>Recreation refers to all those activities that people choose to do to refresh their bodies and minds and 
+  	make their leisure time more interesting and enjoyable. Examples of recreation activities are walking, swimming,
+  	meditation, reading, playing games and dancing.</p>
+  </div>
+  <br /><br />
+ </div>
+ 
+ <h:form><h:commandButton action="registerevent" value="Click Register Here" /></h:form>
+</body>
+</html>
